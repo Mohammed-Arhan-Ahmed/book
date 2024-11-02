@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .item{
+            height: 30px;
+            width: 30px;
+            background-color: aqua;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid black;
+            /* justify-content: space-between; */
+
+        }
+        .item1{
+            background-color: black;
+            position: absolute;
+            top: 30px;
+
+        }
+        @media only screen and (max-width:400px){
+            body{
+                background-color: black;
+            }
+        }
+        .container{
+            border: 3px solid black;
+            display: grid;
+            height: 500px;
+            grid-template-columns: [pehla]30vw 30vw 30vw;
+            grid-template-rows: 20vw 20vw;
+
+        }
+        .item2{
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1 item"></div>
+        <div class="item2 item"></div>
+        <div class="item3 item"></div>
+        <div class="item4 item"></div>
+    </div>
+</body>
+</html>
